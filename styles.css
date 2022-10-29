@@ -1,0 +1,209 @@
+:root {
+    --background: #a5bdd4;
+    --main: white;
+    --header: #618bd4;
+    --text: #2c1c15;
+    --send-box: #e4ebf6;
+    --recieve-box: #f1eff1;
+    --comment: #f1eff1;
+    --send: #6d92c7;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    background-color: white;
+    height: 75vh;
+    width: 30vw;
+    /* padding: 0 2rem; */
+}
+.top {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--header);
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+.name {
+    text-align: start;
+    flex-grow: 1;
+    padding: 0 0.5rem;
+}
+.time {
+    margin: 1rem auto 1.5rem;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(214, 214, 214);
+}
+.line {
+    height: 2px;
+    background-color: rgb(214, 214, 214);
+    width: 9rem;
+}
+.day {
+    padding: 0 0.5rem;
+}
+.chatbox {
+    position: relative;
+    padding: 0 2rem;
+    width: 100%;
+}
+.chat {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    display: flex;
+}
+.chat p{
+    position: relative;
+    max-width: 85%;
+    padding: 0.5rem;
+    background-color: #a5bdd4;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    font-size: 14px;
+}
+.chat p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    background: linear-gradient(225deg,#a5bdd4 0%,#a5bdd4 50%, transparent 50%, transparent) ;
+}
+.chat span {
+    font-weight: 600;
+    color: rgb(204, 199, 199);
+    position: absolute;
+}
+.incoming_chat {
+    justify-content: flex-start;
+}
+.outgoing_chat {
+    justify-content: flex-end;
+}
+.outgoing_chat p {
+    background-color: #e4ebf6;
+}
+.chat.outgoing_chat p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 290px;
+    background: linear-gradient(135deg,#e4ebf6 0%,#e4ebf6 50%, transparent 50%, transparent);
+}
+.block {
+    position: relative;
+    right: -140px;
+}
+.block p {
+    background-color: rgb(248, 187, 187);
+    width: max-content;
+    padding: 0.5rem;
+    border-radius: 5px;
+    position: relative;
+}
+.text_area {
+    margin-top: 0.8rem;
+    border-top: 1px solid rgb(212, 205, 205);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    border: none;
+}
+.typing {
+    color: gray;
+    font-weight: 600;
+}
+.enter {
+    color: #618bd4;
+    font-weight: 800;
+    background-color: white;
+}
+.enter:hover {
+    cursor: pointer;
+}
+
+/* .incoming_chat {
+    font-weight: 600s;
+}
+.incoming_chat p {
+    background-color: #a5bdd4;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+.incoming_chat p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+    background: linear-gradient(225deg,#a5bdd4 0%,#a5bdd4 50%, transparent 50%, transparent) ;
+}
+.outgoing_chat {
+    font-weight: 600s;
+}
+.outgoing_chat p {
+    background-color: #e4ebf6;
+    max-width: 90%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+.outgoing_chat p::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    background: linear-gradient(135deg,#e4ebf6 0%,#e4ebf6 50%, transparent 50%, transparent) ;
+} */
+/* .chat {
+    margin-left: 1rem;
+    width: max-content;
+    border-top: 0.5rem solid gray;
+    border-left: 0.5rem solid transparent;
+}
+.chatrec {
+    border-bottom: 1.5rem solid gray;
+    border-top: 1.5rem solid gray;
+    border-right: 10rem solid gray;
+    border-left: 10rem solid gray;
+    border-radius: 5px;
+    position: relative;
+    top: -8px;
+} */
